@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic');
+body {
+  text-rendering: optimizeSpeed;
+  font: 16px "Open Sans", sans-serif;
+  color: #252525;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.5;
+}
+.wrapper {
+  overflow: hidden;
+}
+.page {
+  min-height: 100vh;
+  transition: 0.3s;
+  &.active {
+    transform: translateX(260px);
+  }
+}
+.main {
+  position: relative;
+  z-index: 1;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media all and(max-width: 460px) {
+  
+}
+
+@import "partials/header";
