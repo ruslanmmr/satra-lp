@@ -123,6 +123,16 @@ body {
     width: 80px;
   }
 }
+@media all and(max-width: 768px) {
+  .interval {
+    &:nth-child(2) {
+      animation-delay: .2s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0;
+    }
+  }
+}
 
 @import "partials/home";
 @import "partials/header";
