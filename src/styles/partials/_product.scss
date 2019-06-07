@@ -1,12 +1,41 @@
 .product {
-  padding: 90px 0;
+  position: relative;
+  z-index: 1;
+  &__container {
+    padding: 60px 0 90px 0;
+  }
+  &__content {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+  }
+  &__bg {
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    &:first-child {
+      transform: translateX(-80%);
+    }
+    &:nth-child(2) {
+      transform: translateX(80%);
+      right: 0;
+    }
+  }
   &__row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -20px;
+    margin: 0 -10px;
+    width: auto;
     justify-content: space-between;
   }
   &__text {
+    padding: 15px 0;
     span {
       display: block;
       text-align: center;
@@ -22,6 +51,7 @@
         font-weight: 800;
         text-transform: uppercase;
         line-height: 1.1;
+        padding-bottom: 0.2em;
       }
       &:last-child {
         color: #fff;
@@ -33,7 +63,7 @@
 }
 
 .product-block {
-  padding: 0 20px;
+  padding: 0 10px;
   width: 33.33%;
   max-width: 290px;
   overflow: hidden;
@@ -73,5 +103,73 @@
     font-size: 16px;
     color: #6bb6fb;
     text-align: center;
+  }
+}
+
+@media all and(max-width: 1200px) {
+  .product__text span:nth-child(2) {
+    font-size: 69px;
+  }
+  .product__text span:first-child {
+    font-size: 32px;
+  }
+}
+@media all and(max-width: 992px) {
+  .product__bg:first-child {
+    transform: translateX(-60%);
+  }
+  .product__bg:nth-child(2) {
+    transform: translateX(60%);
+  }
+  .product__text span:nth-child(2) {
+    font-size: 48px;
+  }
+  .product__text span:first-child {
+    font-size: 28px;
+    padding: 0.15em 0 0.3em 0;
+  }
+}
+@media all and(max-width: 768px) {
+  .product__row {
+    order: 3;
+    justify-content: center;
+    margin: 0 -10px;
+  }
+  .product__text {
+    padding: 0 0 35px 0;
+  }
+  .product-block {
+    padding: 0 10px;
+    width: 50%;
+  }
+}
+@media all and(max-width: 576px) {
+  .product__text span:first-child {
+    font-size: 20px;
+  }
+  .product-block span {
+    padding-top: 10px;
+  }
+  .product__text span:nth-child(2) {
+    font-size: 34px;
+    padding: 0.2em 0;
+  }
+  .product__text span:last-child {
+    font-size: 18px;
+  }
+  .product {
+    &__container {
+      padding-bottom: 70px;
+    }
+  }
+}
+@media all and(max-width: 460px) {
+  .product-block span {
+    font-size: 14px;
+  }
+}
+@media all and(max-width: 375px) {
+  .product-block span {
+    font-size: 12px;
   }
 }

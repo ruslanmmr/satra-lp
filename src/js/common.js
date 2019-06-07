@@ -2,6 +2,8 @@ $(document).ready(function () {
   lazy();
   nav();
   parralax();
+  scroll();
+  new WOW().init();
 });
 $(window).resize(function () {
   innerWidth = $('body').innerWidth();
@@ -62,4 +64,13 @@ function parralax() {
     limitY: '80',
     limitX: '80'
   });
+}
+//scroll
+function scroll() {
+  $(".scroll-link").on("click", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 800);
+	});
 }

@@ -21,7 +21,7 @@
     <div class="wrapper">
       <div class="page">
         <div class="overlay"></div>
-        <header class="header">
+        <header class="header wow fadeIn">
           <div class="container">
             <div class="header__container">
               <div class="header__main"><a class="nav-open" href="#"><span></span></a>
@@ -34,7 +34,7 @@
                 </form>
               </div>
               <div class="header__right">
-                <ul class="header__numbers">
+                <ul class="numbers">
                   <li><a href="tel:88007778508">8 (800) 777-85-08</a></li>
                   <li><a href="tel:84997538888">8 (499) 753-88-88</a></li>
                 </ul><a class="header__lc" href="https://satra.ru/users/auth/"><svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.99439 8.43246C4.68035 8.43246 0.050293 9.54485 0.050293 11.7687V14.1507H13.9375V11.7687C13.9375 9.54485 9.30942 8.43246 6.99439 8.43246Z" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M6.99819 0.0804138C5.41758 0.0804138 4.13477 1.36204 4.13477 2.94002C4.13477 4.518 5.41758 5.79868 6.99819 5.79868C8.57976 5.79868 9.85303 4.518 9.85303 2.94002C9.85303 1.36204 8.57976 0.0804138 6.99819 0.0804138Z" fill="white"/></svg></a>
@@ -67,7 +67,7 @@
           </div>
         </nav>
         <main class="main">
-          <div class="home">
+          <div class="home wow fadeIn">
             <div id="scene">
               <div class="scene-layer lazy" data-depth="0.05"><img class="lazy scene-layer__cloud1" data-src="img/backgrounds/cloud1.png" alt=""></div>
               <div class="scene-layer lazy" data-depth="0.05"><img class="lazy scene-layer__cloud2" data-src="img/backgrounds/cloud2.png" alt=""></div>
@@ -79,32 +79,59 @@
               <div class="home__container">
                 <div class="home__text"><span>12 июня</span><span>День России</span></div>
                 <div class="home__title"><span>Неделя<br> независимости</span><span>от высоких цен</span></div>
-                <div class="scroll-button"><a class="scroll-button__button" href="#product"></a></div>
+                <div class="scroll-button"><a class="scroll-button__button scroll-link" href="#product"></a></div>
               </div>
             </div>
           </div>
           <div class="product">
             <div class="container">
               <div class="product__container">
-                <div class="product__row">
-                  <div class="product-block product-block_pd"><a class="product-block__container" href="#">
-                      <div class="product-block__image"><img class="lazy" data-src="img/image1.png" alt=""></div><span class="product-block__title">Мебель</span></a></div>
-                  <div class="product-block"><a class="product-block__container" href="#">
-                      <div class="product-block__image"><img class="lazy" data-src="img/image2.png" alt=""></div><span class="product-block__title">Унитазы</span></a></div>
-                  <div class="product-block product-block_pd"><a class="product-block__container" href="#">
-                      <div class="product-block__image"><img class="lazy" data-src="img/image3.png" alt=""></div><span class="product-block__title">Ванны</span></a></div>
+                <div class="product__bg lazy" data-src="img/backgrounds/ballon-left.png"></div>
+                <div class="product__bg lazy" data-src="img/backgrounds/ballon-right.png"></div>
+                <div class="product__content" id="product">
+                  <div class="product__row">
+                    <div class="product-block product-block_pd wow fadeInDown interval"><a class="product-block__container" href="#">
+                        <div class="product-block__image"><img class="lazy" data-src="img/image1.png" alt=""></div><span class="product-block__title">Мебель</span></a></div>
+                    <div class="product-block wow fadeInDown interval"><a class="product-block__container" href="#">
+                        <div class="product-block__image"><img class="lazy" data-src="img/image2.png" alt=""></div><span class="product-block__title">Унитазы</span></a></div>
+                    <div class="product-block product-block_pd wow fadeInDown interval"><a class="product-block__container" href="#">
+                        <div class="product-block__image"><img class="lazy" data-src="img/image3.png" alt=""></div><span class="product-block__title">Ванны</span></a></div>
+                  </div>
+                  <div class="product__text wow fadeIn"><span>В честь праздника, на все<br> сантехнические изделия <strong>произвдства России</strong></span><span>дарим скидку 12%</span><span>Срок проведения акции с 10 по 16 июня</span></div>
+                  <div class="product__row">
+                    <div class="product-block wow fadeInDown interval"><a class="product-block__container" href="#">
+                        <div class="product-block__image"><img class="lazy" data-src="img/image4.png" alt=""></div><span class="product-block__title">Полотенцесушители</span></a></div>
+                    <div class="product-block product-block_pd wow fadeInDown interval"><a class="product-block__container" href="#">
+                        <div class="product-block__image"><img class="lazy" data-src="img/image5.png" alt=""></div><span class="product-block__title">Кухонные мойки</span></a></div>
+                    <div class="product-block wow fadeInDown interval"><a class="product-block__container" href="#">
+                        <div class="product-block__image"><img class="lazy" data-src="img/image6.png" alt=""></div><span class="product-block__title">РАКОВИНЫ</span></a></div>
+                  </div>
                 </div>
-                <div class="product__text"><span>В честь праздника, на все<br> сантехнические изделия <strong>произвдства России</strong></span><span>дарим скидку 12%</span><span>Срок проведения акции с 10 по 16 июня</span></div>
               </div>
             </div>
           </div>
         </main>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__container">
+              <div class="logo"><a class="logo__link" href="https://satra.ru/"><img class="logo__image" src="img/logos/logo-footer.svg" alt=""></a></div>
+              <ul class="numbers">
+                <li><a href="tel:88007778508">8 (800) 777-85-08</a></li>
+                <li><a href="tel:84997538888">8 (499) 753-88-88</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__copy">
+            <div class="container"><span>2016-2019 © Satra.ru — Интернет-магазин сантехники. Все права защищены</span></div>
+          </div>
+        </footer>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/libs.min.js"> </script>
     <!--parralax-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js">                </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">              </script>
     <script src="js/common.min.js"></script>
   </body>
 </html>
