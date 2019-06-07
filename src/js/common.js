@@ -1,6 +1,7 @@
 $(document).ready(function () {
   lazy();
   nav();
+  parralax();
 });
 $(window).resize(function () {
   innerWidth = $('body').innerWidth();
@@ -51,4 +52,14 @@ function nav() {
       $overlay.fadeOut(300);
     }
   }
+}
+
+//parralax
+function parralax() {
+  //init parralax
+  var scene = document.getElementById('scene');
+  var parallaxInstance = new Parallax(scene, {
+    limitY: '80',
+    limitX: '80'
+  });
 }

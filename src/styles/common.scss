@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap');
+
 body {
   text-rendering: optimizeSpeed;
   font: 16px "Open Sans", sans-serif;
@@ -9,6 +10,9 @@ body {
 }
 .wrapper {
   overflow: hidden;
+  margin: 0 auto;
+  //
+  background-color: #2867b2;
 }
 .page {
   min-height: 100vh;
@@ -20,15 +24,20 @@ body {
 .main {
   position: relative;
   z-index: 1;
+  margin: 0 auto;
+  max-width: 1920px;
 }
 .container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 @media all and(max-width: 460px) {
   
 }
 
+@import "partials/home";
 @import "partials/header";

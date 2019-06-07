@@ -1,0 +1,218 @@
+.home {
+  background: rgb(106,181,251);
+  background: linear-gradient(to bottom, rgba(106,181,251,1) 0%,rgba(219,246,255,1) 100%);
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: -1px;
+    left: 0;
+    z-index: 2;
+    background: url('../img/backgrounds/overlay.png') no-repeat center center;
+    background-size: auto 100%;
+  }
+  &__container {
+    height: 750px;
+    position: relative;
+    z-index: 2;
+  }
+  &__text {
+    color: #fff;
+    padding: 30px 0 0 130px;
+    display: block;
+    text-align: center;
+    span {
+      display: block;
+      &:first-child {
+        font-size: 58px;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 1;
+        text-shadow: 0px 0px 9px rgba(25,77,171,0.5);
+      }
+      &:last-child {
+        font-size: 42px;
+        letter-spacing: 3px;
+        font-weight: 300;
+        text-shadow: 0px 0px 8px rgba(25,77,171,1);
+      }
+    }
+  }
+  &__title {
+    color: #db1c20;
+    text-transform: uppercase;
+    font-size: 75px;
+    line-height: 1.1;
+    position: absolute;
+    bottom: 110px;
+    letter-spacing: 0.1em;
+    left: 5%;
+    span {
+      display: block;
+      &:first-child {
+        font-weight: 300;
+      }
+      &:last-child {
+        font-weight: 800;
+        letter-spacing: 0.035em;
+      }
+    }
+  }
+}
+
+//
+#scene {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.scene-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  &__cloud1 {
+    display: block;
+    position: absolute;
+    width: 45%;
+    top: 5%;
+  }
+  &__cloud2 {
+    display: block;
+    position: absolute;
+    width: 35%;
+    top: 15%;
+    right: 5%;
+  }
+  &_kreml {
+    background-size: cover;
+    min-width: calc(100% + 80px);
+    min-height:  calc(100% + 80px);
+    left: -40px !important;
+    top: -40px !important;
+    background-position: center center;
+  }
+  &_bird1 {
+    position: absolute;
+    left: 40%;
+    top: 4%;
+  }
+  &_bird2 {
+    position: absolute;
+    left: 56%;
+    top: 53%;
+  }
+}
+
+@media all and(max-width: 1600px) {
+  .home__container {
+    height: 550px;
+  }
+  .home__title {
+    font-size: 55px;
+    left: 15%;
+    bottom: 70px;
+  }
+  .home__text {
+    padding-left: 50px;
+  }
+  .home__text span:first-child {
+    font-size: 45px;
+  }
+  .home__text span:last-child {
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+  .scene-layer_bird1 {
+    left: 39%;
+  }
+}
+@media all and(max-width: 1200px) {
+  .scene-layer_bird1 {
+    left: 34%;
+  }
+}
+@media all and(max-width: 1080px) {
+  .home__title {
+    left: 80px;
+  }
+  .scene-layer_bird1 {
+    left: 30%;
+  }
+}
+@media all and(max-width: 992px) {
+  .home__title {
+    left: 30px;
+  }
+  .scene-layer_bird1 {
+    left: 30%;
+  }
+}
+@media all and(max-width: 768px) {
+  .home__title {
+    font-size: 46px;
+    left: 10px;
+  }
+  .scene-layer_bird1 {
+    left: 22%;
+  }
+}
+@media all and(max-width: 576px) {
+  .home__title {
+    font-size: 36px;
+    left: 0px;
+    letter-spacing: 0.06em;
+  }
+  .home__title span:last-child {
+    letter-spacing: normal;
+  }
+  .scene-layer_bird1 {
+    left: 15%;
+  }
+  .scene-layer_bird2 {
+    left: 65%;
+    top: 51%;
+  }
+  .home__text span:first-child {
+    font-size: 36px;
+  }
+  .home__text span:last-child {
+    font-size: 27px;
+  }
+  .home__text {
+    padding-left: 0;
+  }
+  .home__container {
+    height: 450px;
+  }
+}
+@media all and(max-width: 460px) {
+  .home__title {
+    font-size: 31px;
+  }
+  .scene-layer_kreml {
+    background-position: 55% center;
+  }
+  .scene-layer_bird1 {
+    left: 7%;
+  }
+  .scene-layer_bird2 {
+    left: 55%;
+  }
+  .scene-layer__cloud1 {
+    width: 75%;
+    left: 0;
+  }
+  .scene-layer__cloud2 {
+    top: 35%;
+    width: 60%;
+    right: -20%;
+  }
+}
